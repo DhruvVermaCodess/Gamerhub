@@ -21,7 +21,7 @@ const Header = () => {
               className="flex items-center text-red-500 font-bold text-xl"
             >
               <Gamepad size={28} className="mr-2" />
-              GAMERHUB
+              GADGETTEHUB
             </a>
           </div>
 

@@ -8,7 +8,7 @@ import { useEffect } from 'react'
 
 const HomePage = () => {
   useEffect(() => {
-    document.title = "GamerHub - Premium Gaming Gear";
+    document.title = "Gadgettehub - Premium Gaming Gear";
   }, []);
   return (
     <>
