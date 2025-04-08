@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '../components/Header'
 import HeroSection from '../components/HeroSection'
 import FeaturedProducts from '../components/FeaturedProducts'
 import GamingCategories from '../components/GamingCategories'
@@ -18,7 +17,6 @@ const HomePage = () => {
           <div className="absolute -top-32 -left-32 w-64 h-64 bg-red-500/20 rounded-full blur-3xl"></div>
           <div className="absolute -bottom-32 -right-32 w-64 h-64 bg-red-500/20 rounded-full blur-3xl"></div>
         </div>
-          <Header />
           <HeroSection />
           <FeaturedProducts />
           <GamingCategories />

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Gamepad, Menu, Search, ShoppingCart, User, X } from 'lucide-react';
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,13 +17,12 @@ const Header = () => {
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
-            <a
-              href="#"
+            <Link to='/'
               className="flex items-center text-red-500 font-bold text-xl"
             >
               <Gamepad size={28} className="mr-2" />
               GADGETTEHUB
-            </a>
+            </Link>
           </div>
 
           {/* Navigation (Responsive) */}
@@ -33,23 +33,22 @@ const Header = () => {
           >
             <div className="container mx-auto px-4 lg:px-8">
               <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-8">
-                <a
-                  href="#"
+                <Link to='/'
                   className="text-red-500 font-semibold hover:text-red-400 py-2 lg:py-0"
                 >
                   Home
-                </a>
-                <a href="#" className="text-gray-300 hover:text-red-400 py-2 lg:py-0">
+                </Link>
+                <Link to='/products' className="text-gray-300 hover:text-red-400 py-2 lg:py-0">
                   Shop
-                </a>
+                </Link>
                 <a href="#" className="text-gray-300 hover:text-red-400 py-2 lg:py-0">
                   New Arrivals
                 </a>
+                <Link to='/about' className="text-gray-300 hover:text-red-400 py-2 lg:py-0">
+                  About
+                </Link>
                 <a href="#" className="text-gray-300 hover:text-red-400 py-2 lg:py-0">
-                  Best Sellers
-                </a>
-                <a href="#" className="text-gray-300 hover:text-red-400 py-2 lg:py-0">
-                  Community
+                  Blogs
                 </a>
               </div>
             </div>
@@ -66,10 +65,10 @@ const Header = () => {
                 3
               </span>
             </button>
-            <button className="hidden lg:flex items-center text-gray-300 hover:text-red-400">
+            <Link to='/login' className="hidden lg:flex items-center text-gray-300 hover:text-red-400">
               <User size={20} className="mr-2" />
               Account
-            </button>
+            </Link>
           </div>
         </div>
       </div>
